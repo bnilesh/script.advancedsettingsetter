@@ -63,6 +63,19 @@
         <!--/mymovies_HEADING-->
         <!--/videolibrary_HEADING-->
     </category>
+        <category label="cache">
+        <!--cache_HEADING-->
+        <!--memorysize></memorysize-->
+        <setting default="false" id="memorysizebool" label="Activate memorysize" type="bool"/>
+        <setting default="0" enable="eq(-1,true)" id="memorysize" label="memorysize" subsetting="true" type="number"/>
+        <!--readfactor></readfactor-->
+        <setting default="false" id="readfactorbool" label="Activate readfactor" type="bool"/>
+        <setting default="" enable="eq(-1,true)" id="readfactor" label="readfactor" subsetting="true" type="number"/>
+        <!--buffermode>0</buffermode-->
+        <setting default="false" id="buffermodebool" label="Activate buffermode" type="bool"/>
+        <setting default="0" enable="eq(-1,true)" id="buffermode" label="buffermode" option="int" range="0,1,3" subsetting="true" type="slider"/>
+        <!--/cache_HEADING-->
+    </category>
     <category label="network">
         <!--network_HEADING-->
         <!--cachemembuffersize></cachemembuffersize-->
